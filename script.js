@@ -1,19 +1,34 @@
-function triangle(base, altura){
-    return alert(base * altura/2)
+let menu = ``
+
+function triangle(value) {
+    const base = prompt('Quanto vale a base?')
+    const height = prompt('Quanto vale a altura?')
+    return alert("A área do seu triângulo é: " + (value = (base * height) / 2))
 }
-function rectangle(base, altura){
-    return alert(base * altura)
+
+function rectangle(area) {
+    const base = prompt('Quanto vale a base?')
+    const height = prompt('Quanto vale a altura?')
+    return alert("A área do seu retângulo é: " + (area = base * height))
 }
-function square(lado){
-    return alert(lado * lado)
+
+function square(area) {
+    const side = prompt('Quanto vale o lado?')
+    return alert("A área do seu quadrado é: " + (area = side * side))
 }
-function trapeze(baseMaior, baseMenor, altura){
-    return alert((baseMaior + baseMenor)*altura/2)
+
+function trapeze(area) {
+    const largerBase = prompt('Defina a base maior.')
+    const smallerBase = prompt('Defina a base menor.')
+    const height = prompt('Quanto vale a altura?')
+    return alert("A área do seu trapézio é: " + (area = ((largerBase + smallerBase) * height) / 2))
 }
-function circle(raio){
-    return alert(3.14 *(raio*raio))
+
+function circle(area) {
+    const radius = prompt('Defina o raio do círculo.')
+    return alert("A área do seu círculo é: " + (area = 3.14 * (radius * radius)))
 }
-let menu = ''
+
 
 do {
     menu = prompt(`opção disponivel
@@ -26,19 +41,19 @@ do {
 
     switch (menu) {
         case '1':
-            triangle(5, 6)
+            triangle(5, 7)
             break
         case '2':
-            rectangle(9, 2)
+            rectangle()
             break
         case '3':
-            square(5)
+            square()
             break
         case '4':
-            trapeze(19, 2, 3)
+            trapeze()
             break
         case '5':
-            circle(9)
+            circle()
             break
         case '6':
             alert('acabouu!!')
