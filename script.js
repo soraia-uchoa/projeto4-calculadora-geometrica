@@ -1,17 +1,17 @@
 function triangle(base, altura){
-    return base * altura/2
+    return alert(base * altura/2)
 }
 function rectangle(base, altura){
-    return base * altura
+    return alert(base * altura)
 }
 function square(lado){
-    return lado * lado
+    return alert(lado * lado)
 }
 function trapeze(baseMaior, baseMenor, altura){
-    return (baseMaior + baseMenor)*altura/2
+    return alert((baseMaior + baseMenor)*altura/2)
 }
 function circle(raio){
-    return 3.14 *(raio*raio)
+    return alert(3.14 *(raio*raio))
 }
 let menu = ''
 
@@ -26,19 +26,19 @@ do {
 
     switch (menu) {
         case '1':
-            triangle()
+            triangle(5, 6)
             break
         case '2':
-            rectangle()
+            rectangle(9, 2)
             break
         case '3':
-            square()
+            square(5)
             break
         case '4':
-            trapeze()
+            trapeze(19, 2, 3)
             break
         case '5':
-            circle()
+            circle(9)
             break
         case '6':
             alert('acabouu!!')
