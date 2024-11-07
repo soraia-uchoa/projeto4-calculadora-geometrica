@@ -42,7 +42,7 @@ do {
 
     switch (menu) {
         case '1':
-            triangle(5, 7)
+            triangle()
             break
         case '2':
             rectangle()
